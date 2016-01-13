@@ -1,0 +1,189 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote {
+  &:before, &:after {
+    content: '';
+    content: none;
+  }
+}
+
+q {
+  &:before, &:after {
+    content: '';
+    content: none;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #333;
+  top: 0px;
+  width: 100%;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+  &:last-child {
+    border-right: none;
+  }
+  a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    &:hover:not(.active) {
+      background-color: #111;
+    }
+  }
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+div.work {
+  max-height: 400px;
+}
+
+#projects {
+  .img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    display: inline-block;
+  }
+  &:hover {
+    border: 1px solid #777;
+  }
+  img {
+    height: auto;
+  }
+  &.desc {
+    padding: 15px;
+    text-align: center;
+  }
+}
+
+.container {
+  margin: 0 auto;
+}
+
+section.module {
+  &:last-child {
+    margin-bottom: 0;
+  }
+  h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+    text-align: center;
+  }
+  p {
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 300;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &.content {
+    padding: 40px 0;
+  }
+  &.parallax {
+    height: 600px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    h1 {
+      color: rgba(255, 196, 26, 0.9);
+      /*font-family: 'Alegreya SC', serif;*/
+      font-family: 'Marcellus SC', serif;
+      font-size: 50px;
+      text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;
+      line-height: 600px;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+  &.parallax-1 {
+    background-image: url("https://googledrive.com/host/0B6KECWa9VYOFY0FoRG9FVVVPTHM/Copy of DSC_0629 (3).jpg");
+    /*background: blue;*/
+  }
+  &.parallax-2 {
+    background-image: url("https://googledrive.com/host/0B6KECWa9VYOFY0FoRG9FVVVPTHM/lowerTown.jpg");
+    /*background: red;*/
+  }
+  &.parallax-3, &.parallax-4 {
+    background-image: url("https://googledrive.com/host/0B6KECWa9VYOFY0FoRG9FVVVPTHM/DSC_1396 (2).jpg");
+  }
+  &.parallax.parallax-1 h1 {
+    font-size: 90px;
+    margin-top: 0px;
+    line-height: 500px;
+  }
+}
+
+/*font-family: 'Bitter', serif;*/
+/*font-family: 'Libre Baskerville', serif;*/
+/*font-family: 'Goudy Bookletter 1911', serif;*/
+/*font-family: 'Copse', serif;*/
+
+@media all and (min-width: 600px) {
+  section.module {
+    h2 {
+      font-size: 42px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 70px;
+  }
+}
+
+div.top {
+  margin-top: 0px;
+}
