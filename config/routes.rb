@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   resources :contacts, only: [:new, :create]
 
   # You can have the root of your site routed with "root"
-  get 'layouts/application'
-  root 'layouts#application'
+  get 'welcome/index'
+  root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
