@@ -1,15 +1,196 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333;
+    top: 0px;
+    width: 100%;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+div.work {
+  max-height: 400px;
+}
+
+#projects .img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+
+#projects:hover {
+    border: 1px solid #777;
+}
+
+#projects img {
+    height: auto;
+}
+
+#projects.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+}
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+  text-align: center;
+}
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+ /*font-family: 'Bitter', serif;*/
+  /*font-family: 'Libre Baskerville', serif;*/
+  /*font-family: 'Goudy Bookletter 1911', serif;*/
+  /*font-family: 'Copse', serif;*/
+section.module.parallax h1 {
+  color: rgba(255, 196, 26, 0.9);
+  /*font-family: 'Alegreya SC', serif;*/
+  font-family: 'Marcellus SC', serif;
+  font-size: 50px;
+  text-shadow:
+    -1.5px -1.5px 0 #000,
+    1.5px -1.5px 0 #000,
+    -1.5px 1.5px 0 #000,
+    1.5px 1.5px 0 #000;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+}
+section.module.parallax-1 {
+  background-image: url("https://googledrive.com/host/0B6KECWa9VYOFY0FoRG9FVVVPTHM/Copy of DSC_0629 (3).jpg");
+  /*background: blue;*/
+}
+section.module.parallax-2 {
+  background-image: url("https://googledrive.com/host/0B6KECWa9VYOFY0FoRG9FVVVPTHM/lowerTown.jpg");
+  /*background: red;*/
+}
+section.module.parallax-3 {
+  background-image: url("https://googledrive.com/host/0B6KECWa9VYOFY0FoRG9FVVVPTHM/DSC_1396 (2).jpg");
+}
+section.module.parallax-4 {
+  background-image: url("https://googledrive.com/host/0B6KECWa9VYOFY0FoRG9FVVVPTHM/DSC_1396 (2).jpg");
+}
+section.module.parallax.parallax-1 h1 {
+    font-size: 90px;
+    margin-top: 0px;
+    line-height: 500px;
+}
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 70px;
+  }
+}
+
+div.top {
+  margin-top: 0px;
+}
+
+
