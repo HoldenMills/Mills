@@ -1,5 +1,5 @@
 <!-- <!DOCTYPE html>
-<html lang="en"> -->
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/jquery.smint.js" type="text/javascript"></script>
     <script src="js/doc_ready.js" type="text/javascript"></script>
-    <link href="app/assets/stylesheets/application.css" rel="stylesheet" type='text/css'>
+    <script src="stylesheets/application.scss" rel="stylesheet" type='text/scss'></script>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
     <title>Holden_Mills</title>
     <title>Mills</title>
 
@@ -102,3 +105,5 @@
   </body>
 </html>
 
+
+ -->
