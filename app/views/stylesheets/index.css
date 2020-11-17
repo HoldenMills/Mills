@@ -145,15 +145,15 @@ section.module {
     }
   }
   &.parallax-1 {
-    background-image: url("https://googledrive.com/host/0B6KECWa9VYOFY0FoRG9FVVVPTHM/Copy of DSC_0629 (3).jpg");
+    background-image: url("https://i.imgur.com/muGG4Mv.jpg");
     /*background: blue;*/
   }
   &.parallax-2 {
-    background-image: url("https://googledrive.com/host/0B6KECWa9VYOFY0FoRG9FVVVPTHM/lowerTown.jpg");
+    background-image: url("https://i.imgur.com/ErZBneu.jpg");
     /*background: red;*/
   }
   &.parallax-3, &.parallax-4 {
-    background-image: url("https://googledrive.com/host/0B6KECWa9VYOFY0FoRG9FVVVPTHM/DSC_1396 (2).jpg");
+    background-image: url("https://i.imgur.com/ftfgmvF.jpg");
   }
   &.parallax.parallax-1 h1 {
     font-size: 90px;
